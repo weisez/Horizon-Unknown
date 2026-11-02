@@ -1,1 +1,1169 @@
-{"nodes":[{"id":"niko","type":"char","name":"Niko Weisez","sub":"OFFICE OF SPECIAL OPERATIONS","short":"Бывший хирург, ставший спецоператором. Предпочитает не раскрывать карты раньше времени.","long":"Он открыл дверь раненому и однажды понял, чью жизнь спас. Теперь он живёт между двумя берегами, и ни один из них не называет домом.","quote":"Neither here nor there","img":"img/niko-weisez-oo17.jpg","x":453.93277577916706,"y":11.817256387761631,"banner":"img/niko-weisez-xji6.jpg"},{"id":"ezik","type":"char","name":"Ezikiel Yang Stewart","sub":"OFFICE OF SPECIAL OPERATIONS","short":"Федеральный оперативник со спокойствием, которое не доходит до рук.","long":"Упрямый и дисциплинированный, он ищет в правилах то, чего не нашёл в людях. Свободные вечера проводит с мотором, чтобы мысли не мешали спать.","quote":"I wasn’t sent to help. I was sent to clean up.","img":"img/ezikiel-yang-stewart-e2ib.jpg","x":929.1292960448163,"y":-562.8045266236802,"banner":"img/ezikiel-yang-stewart-55xq.jpg"},{"id":"lis","type":"char","name":"Elisey Antropov","sub":"TCO «SEVERNY»","short":"Беглый «грех» «Северного». Статус неизвестен.","long":"Ленинградец, поджёгший не тот склад и постучавший в нужную дверь. Каждую ночь он бежит от тех, кому когда-то принадлежал.","quote":"For you, my friends.","img":"img/elisey-antropov-nh0t.jpg","x":-176.71214647262184,"y":233.8829727002868,"banner":"img/elisey-antropov-n0bo.jpg"},{"id":"nath","type":"char","name":"Nathaniel Johannsson","sub":"FSK Jaegers // OFFICE OF SPECIAL OPERATIONS","short":"Снайпер из «Егерей». Читает ветер, как письмо.","long":"Волк, спустившийся с гор и оставивший часть себя на высоте 776. Он жалуется на кофе, потому что так проще, чем говорить о другом.","quote":"On my mark.","img":"img/nathaniel-johannsson-0d2t.jpg","x":506.68728152909165,"y":-754.6087336185773,"banner":"img/nathaniel-johannsson-5geq.jpg"},{"id":"gold","type":"char","name":"Dipoalo «Gold» Vance","sub":"[[«Gruppa Kontrol» PMC // GOLDEN GROUP ]]","short":"Улыбается так, будто всё уже решено.","long":"Улыбчивый контрактник в авиаторах, поджигающий чужие войны и отходящий в сторону. Ему не говорят, на кого он работает, зато он знает, ради кого.","quote":"Even the gold can fade away.","img":"img/dipoalo-gold-vance-7q37.jpg","x":-445.9503233018876,"y":-139.94784502753816,"banner":"img/dipoalo-gold-vance-jhvs.jpg"},{"id":"escal","type":"char","name":"Escal Delacroix","sub":"OFFICE OF SPECIAL OPERATIONS","short":"Юрист ОСО. Прячет концы так, что верит даже сенат.","long":"Улыбка контрабандиста, совесть на французском. Когда Офису нужен дьявол, он берётся за работу и присылает счёт.","quote":"Some lies save lives. Others end them.","img":"img/escal-delacroix-7gkc.jpg","x":1060.3542910638653,"y":-183.6543967888216,"banner":"img/escal-delacroix-peay.jpg"},{"id":"sey","type":"char","name":"Seymour Abernathy","sub":"FEDERAL BUREAU OF INVESTIGATIONS","short":"Ветеран Квантико. Хромает и ничего не забывает.","long":"Он учит лжецов жить под чужими именами. Одно больное колено, одно правило и список тех, кого не получилось спасти.","quote":"Quantico's Finest.","img":"img/seymour-abernathy-t75q.jpg","x":201.97121367696502,"y":348.7098913979585,"banner":"img/seymour-abernathy-87cd.jpg"},{"id":"fsk","type":"org","name":"FSK Jaegers","sub":"Спецподразделение","short":"Разведывательно-диверсионная группа норвежского спецназа.","long":"Отсев в восемьдесят процентов и холодная отстранённость как норма. Они приходят, когда никто не просит, и уходят раньше, чем спросят имя.","quote":"War is not a game.","img":"img/fsk-jaegers-f4w0.jpg","x":1047.8954755450402,"y":-949.1136035585303,"stamps":[{"id":"4e8f202","t":"CONFIDENTIAL","x":50,"y":40,"r":-11,"s":20,"c":"#c0392b"}],"banner":"img/fsk-jaegers-cud7.jpg","members":[{"id":"u4ibx7k","name":"NORCOM","role":"Командование","parent":"","nid":""},{"id":"btzos9g","name":"Nathaniel Johannson","role":"Командир отряда","parent":"u4ibx7k","nid":"nath"},{"id":"tp7xoi9","name":"Hazlim Nazari [[KIA]]","role":"Меткий стрелок","parent":"btzos9g","nid":""},{"id":"07h7sid","name":"Dar Koval [[KIA]]","role":"Стрелок-связист","parent":"btzos9g","nid":""},{"id":"byngoys","name":"OSO 6th Field Branch","role":"Наниматель","parent":"u4ibx7k","nid":""}]},{"id":"kg","type":"org","name":"Gruppa Kontrol","sub":"ЧВК","short":"Частная армия с безупречным портфолио клиентов.","long":"Легальный контракт на охрану чужой собственности — входной билет. [[Всё остальное она делает сама и без свидетелей.]]","quote":"Everything is under Kontrol.","img":"img/gruppa-kontrol-crrl.jpg","x":-679.9732690071323,"y":-488.1134141914692,"preset":"pmc","banner":"img/gruppa-kontrol-e9at.jpg","members":[{"id":"m6lzofw","name":"Совет директоров","role":"Серые кардиналы","parent":"","nid":""},{"id":"b7u1p2m","name":"«Куратор»","role":"Дирижёр","parent":"m6lzofw","nid":""},{"id":"k5e7pfw","name":"Dipoalo Vance","role":"«Gold»","parent":"b7u1p2m","nid":"gold"},{"id":"8y4baw6","name":"Halsey Keener","role":"«Phoenix»","parent":"k5e7pfw","nid":""},{"id":"blcvypk","name":"Peter Vought","role":"«Domino»","parent":"k5e7pfw","nid":""},{"id":"tygzhj2","name":"Carl Lindenmann","role":"«Hook»","parent":"k5e7pfw","nid":""},{"id":"0m2f86q","name":"Hilde Kox","role":"«Shadow»","parent":"k5e7pfw","nid":""},{"id":"z1hofzj","name":"Mia Forsworn","role":"«Cobra»","parent":"b7u1p2m","nid":""},{"id":"s3h2n8n","name":"Emily Blackwood","role":"«Little Bird»","parent":"z1hofzj","nid":""}]},{"id":"office","type":"org","name":"Office of Special Operations","sub":"Федеральная служба","short":"Структура, само существование которой невозможно.","long":"Офис, который был создан на закрытом приёме из денег, связей и юридической хитрости. Он обещает порядок там, где полиция тонет в протоколах, и берёт за него такую цену, какую в отчёты не вписывают.","quote":"Dictum est factum.","img":"img/office-of-special-operations-wnoo.jpg","x":28.734550457235883,"y":-454.445836024644,"banner":"img/office-of-special-operations-sb9q.jpg"},{"id":"v1","type":"story","name":"Vol. 1 · Point of No Return","sub":"Season 1 · Neither Here Nor There","short":"История Niko Weisez.","long":"","quote":"","img":"","x":-415.5585072986133,"y":559.9276358937766},{"id":"v2","type":"story","name":"Vol. 2 · Purple By My Heart","sub":"Season 1 · Neither Here Nor There","short":"История Ezikiel Yang Stewart.","long":"","quote":"","img":"","x":-182.99939765997317,"y":771.2926805709379},{"id":"v3","type":"story","name":"Vol. 3 · May God Forgive Me","sub":"Season 1 · Neither Here Nor There","short":"История Елисея Антропова.","long":"","quote":"","img":"","x":24.667088683038727,"y":622.2214848614993},{"id":"v5","type":"story","name":"Vol. 4 · Dance On The Edge","sub":"Season 1 · Neither Here Nor There","short":"Harper Vega Wiyrkomi","long":"","quote":"","img":"","x":229.70321774614428,"y":720.3732733905667},{"id":"v6","type":"story","name":"Vol. 5 · To The Bitter End","sub":"Season 1 · Neither Here Nor There","short":"Nathaniel Johannson","long":"","quote":"","img":"","x":438.1737602382771,"y":503.4924608073983},{"id":"v7","type":"story","name":"Vol. 6 · The Art Of Lie","sub":"Season 1 · Neither Here Nor There","short":"Escal Delacroix, Seymour Abernathy","long":"","quote":"","img":"","x":684.7695566399502,"y":751.3353977562396},{"id":"ousa50u","type":"char","name":"Harper Vega Wiyrkomi","sub":"OFFICE OF SPECIAL OPERATIONS","short":"Аналитик голубых кровей. Расставляет людей, как фигуры.","long":"Наследник двух домов, выбравший поле вместо кабинета. Он играет вдолгую, не вставая со стула, и никогда не теряет счёта.","quote":"Just rely on numbers.","img":"","x":-342.777781087529,"y":-694.4830234748775},{"id":"f469chb","type":"char","name":"Kaiden Hayes","sub":"SFPD TRAMONTANE","short":"","long":"","quote":"","img":"","x":-657.4507075578038,"y":766.9502750328988,"corrupt":1},{"id":"w42r5da","type":"char","name":"Santiago Weisez","sub":"LVPD ROCA ESCALANTE","short":"","long":"","quote":"","img":"","x":-1758.6546813997456,"y":1092.1920678049557},{"id":"zmdlyjs","type":"char","name":"Teigu Perales","sub":"LVPD ROCA ESCALANTE","short":"","long":"","quote":"","img":"","x":-1221.8153680126097,"y":1123.7991775322032,"stamps":[{"id":"k2vb3yg","t":"KILLED IN ACTION","x":50,"y":40,"r":-12,"s":21,"c":"#c0392b"}]},{"id":"ffz2lca","type":"char","name":"Megan Peregrym","sub":"CIVILIAN","short":"","long":"","quote":"","img":"","x":-1723.4226065301782,"y":786.6965681561724,"stamps":[{"id":"9q0o7mw","t":"DECEASED","x":50,"y":40,"r":-12,"s":22,"c":"#c0392b"}]},{"id":"lswnng4","type":"char","name":"Dereck Brith Flints","sub":"OSO 27th INVESTIGATION BRANCH","short":"","long":"","quote":"","img":"","x":-1464.3490279207078,"y":579.7553567894182,"corrupt":1},{"id":"xc3bzky","type":"char","name":"Diana Hawkfield","sub":"HAWKFIELD LANGLEY LTD.","short":"Имя, которое не произносят вслух на публике.","long":"","quote":"The butler did it?","img":"","x":-1249.8107296166552,"y":289.1461115760991,"corrupt":1},{"id":"4t0c2tu","type":"char","name":"Raiko Novak","sub":"OFFICE OF SPECIAL OPERATIONS","short":"Чистый стол, холодный голос и досье на каждого в комнате. Людей он считает инструментами, пока они не докажут обратное.","long":"","quote":"We are all lone wolves here.","img":"","x":93.06380174403239,"y":-860.2662502759641},{"id":"a6ur7ha","type":"char","name":"Kipras «Volya naroda» Sondeckis","sub":"TCO «SEVERNY»","short":"","long":"","quote":"","img":"","x":-1536.114656834267,"y":405.80532602176703,"corrupt":1},{"id":"lczdkb3","type":"char","name":"Nikolay «Metel» Voshodsky","sub":"TCO «SEVERNY» // «TAGANSKAYA BRATVA»","short":"","long":"","quote":"","img":"","x":-2039.2062248795005,"y":-276.8411739585895,"corrupt":1},{"id":"n6dx18q","type":"char","name":"Evelina Akhmetova","sub":"TCO «SEVERNY» // «Zoloto Peterburga»","short":"","long":"","quote":"","img":"","x":-2244.025434614699,"y":-1215.5003618599744,"corrupt":1},{"id":"k2ii7zw","type":"org","name":"OSO 6th Field Branch","sub":"6-ой БРАНЧ ОСО","short":"","long":"","quote":"","img":"","x":-987.3599220039255,"y":215.7901925249448},{"id":"87slebo","type":"org","name":"OSO 27th Investigation Branch","sub":"27-ой БРАНЧ ОСО","short":"","long":"","quote":"","img":"","x":-1472.3331659778787,"y":-96.52453158156283},{"id":"ip9mz30","type":"org","name":"Federal Bureau of Investigations","sub":"ФЕДЕРАЛЬНАЯ СЛУЖБА","short":"","long":"","quote":"","img":"","x":-976.5865185214975,"y":457.579691631149},{"id":"dmdwnca","type":"org","name":"US Marshals Service","sub":"ФЕДЕРАЛЬНАЯ СЛУЖБА","short":"","long":"","quote":"","img":"","x":-1263.8447102556531,"y":-418.8495229274612},{"id":"4eyuxzg","type":"org","name":"Los-Santos Police Department","sub":"ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ","short":"","long":"","quote":"","img":"","x":-1963.616875486866,"y":204.6773041268442},{"id":"vu6ykpb","type":"org","name":"San-Fierro Police Department","sub":"ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ","short":"","long":"","quote":"","img":"","x":-1686.9908946014168,"y":-688.9633431661375},{"id":"nulfxqb","type":"org","name":"Tramontane Central Station","sub":"ЦЕНТРАЛЬНАЯ СТАНЦИЯ 2-ой ЗОНЫ ОТВЕТСТВЕННОСТИ СФПД","short":"","long":"","quote":"","img":"","x":-2016.1746647407524,"y":472.64714330358476},{"id":"a18juac","type":"org","name":"Las-Venturas Police Department","sub":"ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ","short":"","long":"","quote":"","img":"","x":-1330.30599661646,"y":234.42364937611694},{"id":"31555x0","type":"org","name":"Roca Escalante Area Command Station","sub":"ЦЕНТРАЛЬНАЯ СТАНЦИЯ ЗОНЫ КОМАНДОВАНИЯ РОКА ЭСКАЛАНТЕ ЛВПД","short":"","long":"","quote":"","img":"","x":-1846.2890427407253,"y":-94.91603392501287},{"id":"psu27wu","type":"org","name":"TCO «SEVERNY»","sub":"ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА","short":"","long":"","quote":"","img":"","x":-588.6865891088062,"y":233.1914823213351},{"id":"9tyre6s","type":"org","name":"«Zoloto Peterburga»","sub":"ЮВЕЛИРНАЯ СЕТЬ","short":"","long":"","quote":"","img":"","x":-1686.2015558539495,"y":482.9271755146257},{"id":"sybigd8","type":"org","name":"«Taganskaya Bratva»","sub":"ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА","short":"","long":"","quote":"","img":"","x":-1138.1347194531463,"y":-114.54512933096413},{"id":"fp78767","type":"org","name":"Wiyrkomi's House of Records","sub":"КОРПОРАЦИЯ","short":"","long":"","quote":"","img":"","x":-1622.5295641498092,"y":-398.0875916327525},{"id":"7atwltp","type":"org","name":"Corvus Company","sub":"[[Рота специального назначения ЧВК]]","short":"","long":"","quote":"","img":"","x":-997.7510027577812,"y":-873.6858460100527,"corrupt":1},{"id":"55c6pj9","type":"org","name":"Hawkfield Langley Ltd.","sub":"КОРПОРАЦИЯ","short":"","long":"","quote":"","img":"","x":-2290.9909472098393,"y":501.21088201859243},{"id":"uyke2qy","type":"org","name":"«Linden Central» Airbase","sub":"ВОЕННОЕ ФОРМИРОВАНИЕ","short":"7-ая экспедиционная авиационная группа общего назначения","long":"","quote":"","img":"","x":-673.5806379762106,"y":464.7523146088769},{"id":"7brwowu","type":"org","name":"San-Andreas National Guard","sub":"ВОЕННОЕ ФОРМИРОВАНИЕ","short":"","long":"","quote":"","img":"","x":-1687.7312963937657,"y":205.91622838744752},{"id":"lq3o3rb","type":"org","name":"TCO «Nube de Sangre»","sub":"ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА","short":"","long":"","quote":"","img":"","x":-1323.2510310828127,"y":486.0326747149366},{"id":"bgu0sxc","type":"story","name":"Interlude · Under Kontrol","sub":"//error... //DE-CLASSIFIED","short":"Please, welcome. Agent Gold.","long":"","quote":"","img":"","x":896.7859847014073,"y":518.6858039654611},{"id":"nk922m4","type":"story","name":"Vol. 1 · DATA EXPUNGED","sub":"Season 2 · He Who Blinks The First, Second And Last","short":"","long":"","quote":"","img":"","x":-436.6665673574306,"y":-653.2626383984676,"corrupt":1}],"links":[{"id":"58wotr9","a":"fsk","b":"nath","label":"Командир отряда","kind":"ally"},{"id":"rlyx7zg","a":"gold","b":"kg","label":"Командир отряда «Golden Group»","kind":"employer"},{"id":"8oizrtu","a":"niko","b":"ezik","label":"Сослуживец","kind":"ally"},{"id":"12m4y2b","a":"niko","b":"lis","label":"Спаситель","kind":"secret"},{"id":"yek15k2","a":"niko","b":"nath","label":"Наниматель","kind":"employer"},{"id":"d96cxhe","a":"niko","b":"escal","label":"Сослуживец","kind":"ally"},{"id":"fq1w90f","a":"lis","b":"psu27wu","label":"Беглец","kind":"enemy"},{"id":"s4kpzf0","a":"office","b":"niko","label":"Директор","kind":"ally"},{"id":"fzil6we","a":"office","b":"ezik","label":"Специальный оператор","kind":"ally"},{"id":"1doqb8l","a":"office","b":"nath","label":"Оператор","kind":"employer"},{"id":"9hm3feo","a":"office","b":"escal","label":"Юридический консультант","kind":"ally"},{"id":"no0yhgy","a":"office","b":"sey","label":"Специалист","kind":"employer"},{"id":"pj8h7ul","a":"office","b":"4t0c2tu","label":"Специальный оператор JSOC, координатор ОСО","kind":"ally"},{"id":"n2a9zwb","a":"office","b":"ousa50u","label":"Аналитик-координатор JSOC","kind":"ally"}],"home":{"blocks":[{"id":"yu0175o","type":"title","x":60,"y":40,"w":820,"h":240,"style":"plain","accent":"char","a":"HORIZON UNKNOWN","b":"everyone has a past. some are worth killing for.","c":"weisez's","img":"","tab":"graph"},{"id":"sqg6qbe","type":"quote","x":60,"y":300,"w":1080,"h":100,"style":"card","accent":"story","a":"— Просто устал, Феникс. Даже золото иногда устаёт блестеть.","b":"Horizon Unknown: De-Classified // Agent Gold","c":"","img":"","tab":"graph"},{"id":"s246ypt","type":"text","x":60,"y":420,"w":1080,"h":570,"style":"card","accent":"org","a":"О чём эта история","b":"Лас-Вентурас, Сан-Фиерро, Нью-Йорк и весь остальной мир. За фасадами небоскрёбов, в коридорах государственных ведомств, на закрытых корпоративных приёмах и улицах, давно поделённых между криминальными группировками, разворачиваются истории, о которых предпочитают не говорить вслух.\n\nПолиция тонет в протоколах, федеральные ведомства ведут собственные игры, банды и террористические организации рвут города на части, а частные военные компании всё чаще оказываются там, где государство предпочитает не оставлять собственных следов. У каждого своя правда, свои методы и свои причины переступать черту.\n\nИменно в таком мире появляется Офис специальных операций — структура, призванная стоять над привычными механизмами полицейской работы и оказывать поддержку правоохранительным управлениям по всей стране. Её придумали на закрытом приёме семьи Виркоми, между бокалами шампанского и сигаретным дымом. Деньги вложил бизнесмен с огромными связями, силовую часть собрал бывший врач с тёмным прошлым, а юридически всё прикрыл француз, умеющий прятать концы в воду. Однако Офис — лишь одна из многих организаций, чьи интересы пересекаются в этой истории.\n\nЗа его пределами существует собственный мир: шестой полевой филиал ОСО, работающий на стыке оперативной деятельности и интересов ведомства; Дом записей Виркоми, хранящий не только семейную историю; криминальные объединения, вроде ОПГ «Северный» и «Nube de Sangre»; частные военные компании, федеральные структуры, полицейские департаменты и корпоративные образования, у каждого из которых есть собственные цели.\n\nЗдесь нет единой линии между добром и злом, законом и беззаконием. Сегодня ты можешь оказаться по одну сторону баррикад, а завтра — обнаружить, что вчерашний союзник давно играет против тебя. Одни пытаются сохранить порядок, другие наживаются на хаосе, третьи просто делают то, что считают необходимым.\n\nHorizon Unknown — это переплетение историй людей и организаций, существующих в одном общем мире. Мире, где за каждым решением тянется след, за каждой историей скрывается другая, а прошлое некоторых действительно не жалко и убить.\n\nПока одни притворяются ангелами, кому-то приходится быть дьяволом.","c":"ВСТУПЛЕНИЕ","img":"","tab":"graph"},{"id":"8rl0193","type":"button","x":60,"y":1000,"w":260,"h":70,"style":"glass","accent":"char","a":"Связи","b":"","c":"","img":"","tab":"graph"},{"id":"pzeht7c","type":"button","x":600,"y":1000,"w":270,"h":70,"style":"glass","accent":"ink","a":"Персонажи","b":"","c":"","img":"","tab":"char"},{"id":"5zm9llc","type":"button","x":880,"y":1000,"w":260,"h":70,"style":"glass","accent":"org","a":"Организации","b":"","c":"","img":"","tab":"org"},{"id":"ywun2bs","type":"button","x":330,"y":1000,"w":260,"h":70,"style":"glass","accent":"story","a":"Истории","b":"","c":"","img":"","tab":"story"},{"id":"okrikfu","type":"stat","x":490,"y":140,"w":160,"h":110,"style":"plain","accent":"char","a":"77#7","b":"","c":"","img":"","tab":"graph"}]},"events":[{"id":"i7kqmff","date":"2005.09.12","title":"Захват заложников в мотеле \"Ласт Найт\"","text":"","accent":"char","refs":[]},{"id":"hvd1pp4","date":"2010.06.01","title":"«Французская революция»","text":"","accent":"org","refs":[]},{"id":"og3z8wo","date":"2011.08.10","title":"Ликвидация французской ОПГ","text":"","accent":"org","refs":[]},{"id":"q69lyzw","date":"2013.01.01","title":"«Дом семьи Перегрим»","text":"","accent":"story","refs":[]},{"id":"186iaax","date":"2017.04.28","title":"Захват банка «Detroit Line, LLC.»","text":"","accent":"char","refs":[]},{"id":"n028o6r","date":"2018.10.10","title":"Появление Офиса специальных операций","text":"","accent":"org","refs":[]},{"id":"25yzxd6","date":"2013.01.25","title":"Встреча Елисея и Нико","text":"","accent":"org","refs":[]},{"id":"h3qodn2","date":"2017.11.20","title":"Закрытый приём Дома записей Виркоми","text":"","accent":"story","refs":[]},{"id":"h3mt84h","date":"2022.10.04","title":"Подавление спящей ячейки в портовом терминале Сан-Фиерро","text":"","accent":"char","refs":[]},{"id":"mwy5wbq","date":"2024.06.10","title":"Внедрение Эскаля Делакруа в группировку торговцев оружием","text":"","accent":"org","refs":[]},{"id":"5c239tt","date":"2024.06.29","title":"Начало гражданской войны в Мексике","text":"","accent":"char","refs":[]},{"id":"h29fh0p","date":"2005.07.10","title":"Убийство капитана станции Рока Эскаланте","text":"","accent":"char","refs":[]},{"id":"td0nnkt","date":"2024.07.20","title":"[[Смерть агента Голда и его группы]]","text":"","accent":"char","refs":[]},{"id":"6ut11yg","date":"2024.07.10","title":"Командировка представителей 27-го бранча ОСО в Мексику","text":"","accent":"char","refs":[]},{"id":"021nbgk","date":"2025.05.01","title":"«Дело Хоукфилд»","text":"","accent":"story","refs":[]}],"ord":{"story":["d_ikxlfds","v1","v2","v3","v5","v6","v7","bgu0sxc","d_n0xvq8f","nk922m4"],"org":["d_jop7psc","office","k2ii7zw","87slebo","fsk","d_rmtlf55","4eyuxzg","vu6ykpb","nulfxqb","a18juac","31555x0","d_cmjn8g1","ip9mz30","dmdwnca","uyke2qy","7brwowu","d_of9y13q","kg","7atwltp","d_dkwoazb","fp78767","55c6pj9","9tyre6s","d_b1fvhpq","psu27wu","sybigd8","lq3o3rb"],"char":["niko","ezik","lis","nath","escal","gold","sey","ousa50u","f469chb","w42r5da","zmdlyjs","ffz2lca","lswnng4","xc3bzky","4t0c2tu","a6ur7ha","lczdkb3","n6dx18q"]},"divs":{"d_n0xvq8f":{"type":"story","label":"SEASON 2 ","sub":"He Who Blinks The First, Second And Last"},"d_ikxlfds":{"type":"story","label":"SEASON 1","sub":"Neither Here Nor There"},"d_jop7psc":{"type":"org","label":"dictum est factum","sub":"Office of Special Operations"},"d_rmtlf55":{"type":"org","label":"TO PROTECT AND SERVE","sub":"Police Structures"},"d_cmjn8g1":{"type":"org","label":"THE CAVALRY IS HERE","sub":"Federal Services"},"d_of9y13q":{"type":"org","label":"UNDER KONTROL","sub":"Gruppa and it's friends"},"d_dkwoazb":{"type":"org","label":"COIN'S BLINK","sub":""},"d_b1fvhpq":{"type":"org","label":"PULL THE TRIGGER","sub":"Crime organizations"}}}
+{
+  "nodes": [
+    {
+      "id": "niko",
+      "type": "char",
+      "name": "Niko Weisez",
+      "sub": "OFFICE OF SPECIAL OPERATIONS",
+      "short": "Бывший хирург, ставший спецоператором. Предпочитает не раскрывать карты раньше времени.",
+      "long": "Он открыл дверь раненому и однажды понял, чью жизнь спас. Теперь он живёт между двумя берегами, и ни один из них не называет домом.",
+      "quote": "Neither here nor there",
+      "img": "img/niko-weisez-oo17.jpg",
+      "x": 453.93277577916706,
+      "y": 11.817256387761631,
+      "banner": "img/niko-weisez-xji6.jpg"
+    },
+    {
+      "id": "ezik",
+      "type": "char",
+      "name": "Ezikiel Yang Stewart",
+      "sub": "OFFICE OF SPECIAL OPERATIONS",
+      "short": "Федеральный оперативник со спокойствием, которое не доходит до рук.",
+      "long": "Упрямый и дисциплинированный, он ищет в правилах то, чего не нашёл в людях. Свободные вечера проводит с мотором, чтобы мысли не мешали спать.",
+      "quote": "I wasn’t sent to help. I was sent to clean up.",
+      "img": "img/ezikiel-yang-stewart-e2ib.jpg",
+      "x": 929.1292960448163,
+      "y": -562.8045266236802,
+      "banner": "img/ezikiel-yang-stewart-55xq.jpg"
+    },
+    {
+      "id": "lis",
+      "type": "char",
+      "name": "Elisey Antropov",
+      "sub": "TCO «SEVERNY»",
+      "short": "Беглый «грех» «Северного». Статус неизвестен.",
+      "long": "Ленинградец, поджёгший не тот склад и постучавший в нужную дверь. Каждую ночь он бежит от тех, кому когда-то принадлежал.",
+      "quote": "For you, my friends.",
+      "img": "img/elisey-antropov-nh0t.jpg",
+      "x": -176.71214647262184,
+      "y": 233.8829727002868,
+      "banner": "img/elisey-antropov-n0bo.jpg"
+    },
+    {
+      "id": "nath",
+      "type": "char",
+      "name": "Nathaniel Johannsson",
+      "sub": "FSK Jaegers // OFFICE OF SPECIAL OPERATIONS",
+      "short": "Снайпер из «Егерей». Читает ветер, как письмо.",
+      "long": "Волк, спустившийся с гор и оставивший часть себя на высоте 776. Он жалуется на кофе, потому что так проще, чем говорить о другом.",
+      "quote": "On my mark.",
+      "img": "img/nathaniel-johannsson-0d2t.jpg",
+      "x": 506.68728152909165,
+      "y": -754.6087336185773,
+      "banner": "img/nathaniel-johannsson-5geq.jpg"
+    },
+    {
+      "id": "gold",
+      "type": "char",
+      "name": "Dipoalo «Gold» Vance",
+      "sub": "[[«Gruppa Kontrol» PMC // GOLDEN GROUP ]]",
+      "short": "Улыбается так, будто всё уже решено.",
+      "long": "Улыбчивый контрактник в авиаторах, поджигающий чужие войны и отходящий в сторону. Ему не говорят, на кого он работает, зато он знает, ради кого.",
+      "quote": "Even the gold can fade away.",
+      "img": "img/dipoalo-gold-vance-7q37.jpg",
+      "x": -445.9503233018876,
+      "y": -139.94784502753816,
+      "banner": "img/dipoalo-gold-vance-jhvs.jpg"
+    },
+    {
+      "id": "escal",
+      "type": "char",
+      "name": "Escal Delacroix",
+      "sub": "OFFICE OF SPECIAL OPERATIONS",
+      "short": "Юрист ОСО. Прячет концы так, что верит даже сенат.",
+      "long": "Улыбка контрабандиста, совесть на французском. Когда Офису нужен дьявол, он берётся за работу и присылает счёт.",
+      "quote": "Some lies save lives. Others end them.",
+      "img": "img/escal-delacroix-7gkc.jpg",
+      "x": 1060.3542910638653,
+      "y": -183.6543967888216,
+      "banner": "img/escal-delacroix-peay.jpg"
+    },
+    {
+      "id": "sey",
+      "type": "char",
+      "name": "Seymour Abernathy",
+      "sub": "FEDERAL BUREAU OF INVESTIGATIONS",
+      "short": "Ветеран Квантико. Хромает и ничего не забывает.",
+      "long": "Он учит лжецов жить под чужими именами. Одно больное колено, одно правило и список тех, кого не получилось спасти.",
+      "quote": "Quantico's Finest.",
+      "img": "img/seymour-abernathy-t75q.jpg",
+      "x": 201.97121367696502,
+      "y": 348.7098913979585,
+      "banner": "img/seymour-abernathy-87cd.jpg"
+    },
+    {
+      "id": "fsk",
+      "type": "org",
+      "name": "FSK Jaegers",
+      "sub": "Спецподразделение",
+      "short": "Разведывательно-диверсионная группа норвежского спецназа.",
+      "long": "Отсев в восемьдесят процентов и холодная отстранённость как норма. Они приходят, когда никто не просит, и уходят раньше, чем спросят имя.",
+      "quote": "War is not a game.",
+      "img": "img/fsk-jaegers-f4w0.jpg",
+      "x": 1047.8954755450402,
+      "y": -949.1136035585303,
+      "stamps": [
+        {
+          "id": "4e8f202",
+          "t": "CONFIDENTIAL",
+          "x": 50,
+          "y": 40,
+          "r": -11,
+          "s": 20,
+          "c": "#c0392b"
+        }
+      ],
+      "banner": "img/fsk-jaegers-cud7.jpg",
+      "members": [
+        {
+          "id": "u4ibx7k",
+          "name": "NORCOM",
+          "role": "Командование",
+          "parent": "",
+          "nid": ""
+        },
+        {
+          "id": "btzos9g",
+          "name": "Nathaniel Johannson",
+          "role": "Командир отряда",
+          "parent": "u4ibx7k",
+          "nid": "nath"
+        },
+        {
+          "id": "tp7xoi9",
+          "name": "Hazlim Nazari [[KIA]]",
+          "role": "Меткий стрелок",
+          "parent": "btzos9g",
+          "nid": ""
+        },
+        {
+          "id": "07h7sid",
+          "name": "Dar Koval [[KIA]]",
+          "role": "Стрелок-связист",
+          "parent": "btzos9g",
+          "nid": ""
+        },
+        {
+          "id": "byngoys",
+          "name": "OSO 6th Field Branch",
+          "role": "Наниматель",
+          "parent": "u4ibx7k",
+          "nid": ""
+        }
+      ]
+    },
+    {
+      "id": "kg",
+      "type": "org",
+      "name": "Gruppa Kontrol",
+      "sub": "ЧВК",
+      "short": "Частная армия с безупречным портфолио клиентов.",
+      "long": "Легальный контракт на охрану чужой собственности — входной билет. [[Всё остальное она делает сама и без свидетелей.]]",
+      "quote": "Everything is under Kontrol.",
+      "img": "img/gruppa-kontrol-crrl.jpg",
+      "x": -679.9732690071323,
+      "y": -488.1134141914692,
+      "preset": "pmc",
+      "banner": "img/gruppa-kontrol-e9at.jpg",
+      "members": [
+        {
+          "id": "m6lzofw",
+          "name": "Совет директоров",
+          "role": "Серые кардиналы",
+          "parent": "",
+          "nid": ""
+        },
+        {
+          "id": "b7u1p2m",
+          "name": "«Куратор»",
+          "role": "Дирижёр",
+          "parent": "m6lzofw",
+          "nid": ""
+        },
+        {
+          "id": "k5e7pfw",
+          "name": "Dipoalo Vance",
+          "role": "«Gold»",
+          "parent": "b7u1p2m",
+          "nid": "gold"
+        },
+        {
+          "id": "8y4baw6",
+          "name": "Halsey Keener",
+          "role": "«Phoenix»",
+          "parent": "k5e7pfw",
+          "nid": ""
+        },
+        {
+          "id": "blcvypk",
+          "name": "Peter Vought",
+          "role": "«Domino»",
+          "parent": "k5e7pfw",
+          "nid": ""
+        },
+        {
+          "id": "tygzhj2",
+          "name": "Carl Lindenmann",
+          "role": "«Hook»",
+          "parent": "k5e7pfw",
+          "nid": ""
+        },
+        {
+          "id": "0m2f86q",
+          "name": "Hilde Kox",
+          "role": "«Shadow»",
+          "parent": "k5e7pfw",
+          "nid": ""
+        },
+        {
+          "id": "z1hofzj",
+          "name": "Mia Forsworn",
+          "role": "«Cobra»",
+          "parent": "b7u1p2m",
+          "nid": ""
+        },
+        {
+          "id": "s3h2n8n",
+          "name": "Emily Blackwood",
+          "role": "«Little Bird»",
+          "parent": "z1hofzj",
+          "nid": ""
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "type": "org",
+      "name": "Office of Special Operations",
+      "sub": "Федеральная служба",
+      "short": "Структура, само существование которой невозможно.",
+      "long": "Офис, который был создан на закрытом приёме из денег, связей и юридической хитрости. Он обещает порядок там, где полиция тонет в протоколах, и берёт за него такую цену, какую в отчёты не вписывают.",
+      "quote": "Dictum est factum.",
+      "img": "img/office-of-special-operations-wnoo.jpg",
+      "x": 28.734550457235883,
+      "y": -454.445836024644,
+      "banner": "img/office-of-special-operations-sb9q.jpg"
+    },
+    {
+      "id": "v1",
+      "type": "story",
+      "name": "Vol. 1 · Point of No Return",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "История Niko Weisez.",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -415.5585072986133,
+      "y": 559.9276358937766
+    },
+    {
+      "id": "v2",
+      "type": "story",
+      "name": "Vol. 2 · Purple By My Heart",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "История Ezikiel Yang Stewart.",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -182.99939765997317,
+      "y": 771.2926805709379
+    },
+    {
+      "id": "v3",
+      "type": "story",
+      "name": "Vol. 3 · May God Forgive Me",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "История Елисея Антропова.",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": 24.667088683038727,
+      "y": 622.2214848614993
+    },
+    {
+      "id": "v5",
+      "type": "story",
+      "name": "Vol. 4 · Dance On The Edge",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "Harper Vega Wiyrkomi",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": 229.70321774614428,
+      "y": 720.3732733905667
+    },
+    {
+      "id": "v6",
+      "type": "story",
+      "name": "Vol. 5 · To The Bitter End",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "Nathaniel Johannson",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": 438.1737602382771,
+      "y": 503.4924608073983
+    },
+    {
+      "id": "v7",
+      "type": "story",
+      "name": "Vol. 6 · The Art Of Lie",
+      "sub": "Season 1 · Neither Here Nor There",
+      "short": "Escal Delacroix, Seymour Abernathy",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": 684.7695566399502,
+      "y": 751.3353977562396
+    },
+    {
+      "id": "ousa50u",
+      "type": "char",
+      "name": "Harper Vega Wiyrkomi",
+      "sub": "OFFICE OF SPECIAL OPERATIONS",
+      "short": "Аналитик голубых кровей. Расставляет людей, как фигуры.",
+      "long": "Наследник двух домов, выбравший поле вместо кабинета. Он играет вдолгую, не вставая со стула, и никогда не теряет счёта.",
+      "quote": "Just rely on numbers.",
+      "img": "",
+      "x": -342.777781087529,
+      "y": -694.4830234748775
+    },
+    {
+      "id": "f469chb",
+      "type": "char",
+      "name": "Kaiden Hayes",
+      "sub": "SFPD TRAMONTANE",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -657.4507075578038,
+      "y": 766.9502750328988,
+      "corrupt": 1
+    },
+    {
+      "id": "w42r5da",
+      "type": "char",
+      "name": "Santiago Weisez",
+      "sub": "LVPD ROCA ESCALANTE",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1758.6546813997456,
+      "y": 1092.1920678049557
+    },
+    {
+      "id": "zmdlyjs",
+      "type": "char",
+      "name": "Teigu Perales",
+      "sub": "LVPD ROCA ESCALANTE",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1221.8153680126097,
+      "y": 1123.7991775322032,
+      "stamps": [
+        {
+          "id": "k2vb3yg",
+          "t": "KILLED IN ACTION",
+          "x": 50,
+          "y": 40,
+          "r": -12,
+          "s": 21,
+          "c": "#c0392b"
+        }
+      ]
+    },
+    {
+      "id": "ffz2lca",
+      "type": "char",
+      "name": "Megan Peregrym",
+      "sub": "CIVILIAN",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1723.4226065301782,
+      "y": 786.6965681561724,
+      "stamps": [
+        {
+          "id": "9q0o7mw",
+          "t": "DECEASED",
+          "x": 50,
+          "y": 40,
+          "r": -12,
+          "s": 22,
+          "c": "#c0392b"
+        }
+      ]
+    },
+    {
+      "id": "lswnng4",
+      "type": "char",
+      "name": "Dereck Brith Flints",
+      "sub": "OSO 27th INVESTIGATION BRANCH",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1464.3490279207078,
+      "y": 579.7553567894182,
+      "corrupt": 1
+    },
+    {
+      "id": "xc3bzky",
+      "type": "char",
+      "name": "Diana Hawkfield",
+      "sub": "HAWKFIELD LANGLEY LTD.",
+      "short": "Имя, которое не произносят вслух на публике.",
+      "long": "",
+      "quote": "The butler did it?",
+      "img": "",
+      "x": -1249.8107296166552,
+      "y": 289.1461115760991,
+      "corrupt": 1
+    },
+    {
+      "id": "4t0c2tu",
+      "type": "char",
+      "name": "Raiko Novak",
+      "sub": "OFFICE OF SPECIAL OPERATIONS",
+      "short": "Чистый стол, холодный голос и досье на каждого в комнате. Людей он считает инструментами, пока они не докажут обратное.",
+      "long": "",
+      "quote": "We are all lone wolves here.",
+      "img": "",
+      "x": 93.06380174403239,
+      "y": -860.2662502759641
+    },
+    {
+      "id": "a6ur7ha",
+      "type": "char",
+      "name": "Kipras «Volya naroda» Sondeckis",
+      "sub": "TCO «SEVERNY»",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1536.114656834267,
+      "y": 405.80532602176703,
+      "corrupt": 1
+    },
+    {
+      "id": "lczdkb3",
+      "type": "char",
+      "name": "Nikolay «Metel» Voshodsky",
+      "sub": "TCO «SEVERNY» // «TAGANSKAYA BRATVA»",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -2039.2062248795005,
+      "y": -276.8411739585895,
+      "corrupt": 1
+    },
+    {
+      "id": "n6dx18q",
+      "type": "char",
+      "name": "Evelina Akhmetova",
+      "sub": "TCO «SEVERNY» // «Zoloto Peterburga»",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -2244.025434614699,
+      "y": -1215.5003618599744,
+      "corrupt": 1
+    },
+    {
+      "id": "k2ii7zw",
+      "type": "org",
+      "name": "OSO 6th Field Branch",
+      "sub": "6-ой БРАНЧ ОСО",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -987.3599220039255,
+      "y": 215.7901925249448
+    },
+    {
+      "id": "87slebo",
+      "type": "org",
+      "name": "OSO 27th Investigation Branch",
+      "sub": "27-ой БРАНЧ ОСО",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1472.3331659778787,
+      "y": -96.52453158156283
+    },
+    {
+      "id": "ip9mz30",
+      "type": "org",
+      "name": "Federal Bureau of Investigations",
+      "sub": "ФЕДЕРАЛЬНАЯ СЛУЖБА",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -976.5865185214975,
+      "y": 457.579691631149
+    },
+    {
+      "id": "dmdwnca",
+      "type": "org",
+      "name": "US Marshals Service",
+      "sub": "ФЕДЕРАЛЬНАЯ СЛУЖБА",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1263.8447102556531,
+      "y": -418.8495229274612
+    },
+    {
+      "id": "4eyuxzg",
+      "type": "org",
+      "name": "Los-Santos Police Department",
+      "sub": "ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1963.616875486866,
+      "y": 204.6773041268442
+    },
+    {
+      "id": "vu6ykpb",
+      "type": "org",
+      "name": "San-Fierro Police Department",
+      "sub": "ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1686.9908946014168,
+      "y": -688.9633431661375
+    },
+    {
+      "id": "nulfxqb",
+      "type": "org",
+      "name": "Tramontane Central Station",
+      "sub": "ЦЕНТРАЛЬНАЯ СТАНЦИЯ 2-ой ЗОНЫ ОТВЕТСТВЕННОСТИ СФПД",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -2016.1746647407524,
+      "y": 472.64714330358476
+    },
+    {
+      "id": "a18juac",
+      "type": "org",
+      "name": "Las-Venturas Police Department",
+      "sub": "ПОЛИЦЕЙСКИЙ ДЕПАРТАМЕНТ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1330.30599661646,
+      "y": 234.42364937611694
+    },
+    {
+      "id": "31555x0",
+      "type": "org",
+      "name": "Roca Escalante Area Command Station",
+      "sub": "ЦЕНТРАЛЬНАЯ СТАНЦИЯ ЗОНЫ КОМАНДОВАНИЯ РОКА ЭСКАЛАНТЕ ЛВПД",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1846.2890427407253,
+      "y": -94.91603392501287
+    },
+    {
+      "id": "psu27wu",
+      "type": "org",
+      "name": "TCO «SEVERNY»",
+      "sub": "ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -588.6865891088062,
+      "y": 233.1914823213351
+    },
+    {
+      "id": "9tyre6s",
+      "type": "org",
+      "name": "«Zoloto Peterburga»",
+      "sub": "ЮВЕЛИРНАЯ СЕТЬ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1686.2015558539495,
+      "y": 482.9271755146257
+    },
+    {
+      "id": "sybigd8",
+      "type": "org",
+      "name": "«Taganskaya Bratva»",
+      "sub": "ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1138.1347194531463,
+      "y": -114.54512933096413
+    },
+    {
+      "id": "fp78767",
+      "type": "org",
+      "name": "Wiyrkomi's House of Records",
+      "sub": "КОРПОРАЦИЯ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1622.5295641498092,
+      "y": -398.0875916327525
+    },
+    {
+      "id": "7atwltp",
+      "type": "org",
+      "name": "Corvus Company",
+      "sub": "[[Рота специального назначения ЧВК]]",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -997.7510027577812,
+      "y": -873.6858460100527,
+      "corrupt": 1
+    },
+    {
+      "id": "55c6pj9",
+      "type": "org",
+      "name": "Hawkfield Langley Ltd.",
+      "sub": "КОРПОРАЦИЯ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -2290.9909472098393,
+      "y": 501.21088201859243
+    },
+    {
+      "id": "uyke2qy",
+      "type": "org",
+      "name": "«Linden Central» Airbase",
+      "sub": "ВОЕННОЕ ФОРМИРОВАНИЕ",
+      "short": "7-ая экспедиционная авиационная группа общего назначения",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -673.5806379762106,
+      "y": 464.7523146088769
+    },
+    {
+      "id": "7brwowu",
+      "type": "org",
+      "name": "San-Andreas National Guard",
+      "sub": "ВОЕННОЕ ФОРМИРОВАНИЕ",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1687.7312963937657,
+      "y": 205.91622838744752
+    },
+    {
+      "id": "lq3o3rb",
+      "type": "org",
+      "name": "TCO «Nube de Sangre»",
+      "sub": "ОРГАНИЗОВАННАЯ ПРЕСТУПНАЯ ГРУППИРОВКА",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -1323.2510310828127,
+      "y": 486.0326747149366
+    },
+    {
+      "id": "bgu0sxc",
+      "type": "story",
+      "name": "Interlude · Under Kontrol",
+      "sub": "//error... //DE-CLASSIFIED",
+      "short": "Please, welcome. Agent Gold.",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": 896.7859847014073,
+      "y": 518.6858039654611
+    },
+    {
+      "id": "nk922m4",
+      "type": "story",
+      "name": "Vol. 1 · DATA EXPUNGED",
+      "sub": "Season 2 · He Who Blinks The First, Second And Last",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -436.6665673574306,
+      "y": -653.2626383984676,
+      "corrupt": 1
+    }
+  ],
+  "links": [
+    {
+      "id": "58wotr9",
+      "a": "fsk",
+      "b": "nath",
+      "label": "Командир отряда",
+      "kind": "ally"
+    },
+    {
+      "id": "rlyx7zg",
+      "a": "gold",
+      "b": "kg",
+      "label": "Командир отряда «Golden Group»",
+      "kind": "employer"
+    },
+    {
+      "id": "8oizrtu",
+      "a": "niko",
+      "b": "ezik",
+      "label": "Сослуживец",
+      "kind": "ally"
+    },
+    {
+      "id": "12m4y2b",
+      "a": "niko",
+      "b": "lis",
+      "label": "Спаситель",
+      "kind": "secret"
+    },
+    {
+      "id": "yek15k2",
+      "a": "niko",
+      "b": "nath",
+      "label": "Наниматель",
+      "kind": "employer"
+    },
+    {
+      "id": "d96cxhe",
+      "a": "niko",
+      "b": "escal",
+      "label": "Сослуживец",
+      "kind": "ally"
+    },
+    {
+      "id": "fq1w90f",
+      "a": "lis",
+      "b": "psu27wu",
+      "label": "Беглец",
+      "kind": "enemy"
+    },
+    {
+      "id": "s4kpzf0",
+      "a": "office",
+      "b": "niko",
+      "label": "Директор",
+      "kind": "ally"
+    },
+    {
+      "id": "fzil6we",
+      "a": "office",
+      "b": "ezik",
+      "label": "Специальный оператор",
+      "kind": "ally"
+    },
+    {
+      "id": "1doqb8l",
+      "a": "office",
+      "b": "nath",
+      "label": "Оператор",
+      "kind": "employer"
+    },
+    {
+      "id": "9hm3feo",
+      "a": "office",
+      "b": "escal",
+      "label": "Юридический консультант",
+      "kind": "ally"
+    },
+    {
+      "id": "no0yhgy",
+      "a": "office",
+      "b": "sey",
+      "label": "Специалист",
+      "kind": "employer"
+    },
+    {
+      "id": "pj8h7ul",
+      "a": "office",
+      "b": "4t0c2tu",
+      "label": "Специальный оператор JSOC, координатор ОСО",
+      "kind": "ally"
+    },
+    {
+      "id": "n2a9zwb",
+      "a": "office",
+      "b": "ousa50u",
+      "label": "Аналитик-координатор JSOC",
+      "kind": "ally"
+    }
+  ],
+  "home": {
+    "blocks": [
+      {
+        "id": "yu0175o",
+        "type": "title",
+        "x": 60,
+        "y": 40,
+        "w": 820,
+        "h": 240,
+        "style": "plain",
+        "accent": "char",
+        "a": "HORIZON UNKNOWN",
+        "b": "everyone has a past. some are worth killing for.",
+        "c": "weisez's",
+        "img": "",
+        "tab": "graph"
+      },
+      {
+        "id": "sqg6qbe",
+        "type": "quote",
+        "x": 60,
+        "y": 300,
+        "w": 1080,
+        "h": 100,
+        "style": "card",
+        "accent": "story",
+        "a": "— Просто устал, Феникс. Даже золото иногда устаёт блестеть.",
+        "b": "Horizon Unknown: De-Classified // Agent Gold",
+        "c": "",
+        "img": "",
+        "tab": "graph"
+      },
+      {
+        "id": "s246ypt",
+        "type": "text",
+        "x": 60,
+        "y": 420,
+        "w": 1080,
+        "h": 570,
+        "style": "card",
+        "accent": "org",
+        "a": "О чём эта история",
+        "b": "Лас-Вентурас, Сан-Фиерро, Нью-Йорк и весь остальной мир. За фасадами небоскрёбов, в коридорах государственных ведомств, на закрытых корпоративных приёмах и улицах, давно поделённых между криминальными группировками, разворачиваются истории, о которых предпочитают не говорить вслух.\n\nПолиция тонет в протоколах, федеральные ведомства ведут собственные игры, банды и террористические организации рвут города на части, а частные военные компании всё чаще оказываются там, где государство предпочитает не оставлять собственных следов. У каждого своя правда, свои методы и свои причины переступать черту.\n\nИменно в таком мире появляется Офис специальных операций — структура, призванная стоять над привычными механизмами полицейской работы и оказывать поддержку правоохранительным управлениям по всей стране. Её придумали на закрытом приёме семьи Виркоми, между бокалами шампанского и сигаретным дымом. Деньги вложил бизнесмен с огромными связями, силовую часть собрал бывший врач с тёмным прошлым, а юридически всё прикрыл француз, умеющий прятать концы в воду. Однако Офис — лишь одна из многих организаций, чьи интересы пересекаются в этой истории.\n\nЗа его пределами существует собственный мир: шестой полевой филиал ОСО, работающий на стыке оперативной деятельности и интересов ведомства; Дом записей Виркоми, хранящий не только семейную историю; криминальные объединения, вроде ОПГ «Северный» и «Nube de Sangre»; частные военные компании, федеральные структуры, полицейские департаменты и корпоративные образования, у каждого из которых есть собственные цели.\n\nЗдесь нет единой линии между добром и злом, законом и беззаконием. Сегодня ты можешь оказаться по одну сторону баррикад, а завтра — обнаружить, что вчерашний союзник давно играет против тебя. Одни пытаются сохранить порядок, другие наживаются на хаосе, третьи просто делают то, что считают необходимым.\n\nHorizon Unknown — это переплетение историй людей и организаций, существующих в одном общем мире. Мире, где за каждым решением тянется след, за каждой историей скрывается другая, а прошлое некоторых действительно не жалко и убить.\n\nПока одни притворяются ангелами, кому-то приходится быть дьяволом.",
+        "c": "ВСТУПЛЕНИЕ",
+        "img": "",
+        "tab": "graph"
+      },
+      {
+        "id": "8rl0193",
+        "type": "button",
+        "x": 60,
+        "y": 1000,
+        "w": 260,
+        "h": 70,
+        "style": "glass",
+        "accent": "char",
+        "a": "Связи",
+        "b": "",
+        "c": "",
+        "img": "",
+        "tab": "graph"
+      },
+      {
+        "id": "pzeht7c",
+        "type": "button",
+        "x": 600,
+        "y": 1000,
+        "w": 270,
+        "h": 70,
+        "style": "glass",
+        "accent": "ink",
+        "a": "Персонажи",
+        "b": "",
+        "c": "",
+        "img": "",
+        "tab": "char"
+      },
+      {
+        "id": "5zm9llc",
+        "type": "button",
+        "x": 880,
+        "y": 1000,
+        "w": 260,
+        "h": 70,
+        "style": "glass",
+        "accent": "org",
+        "a": "Организации",
+        "b": "",
+        "c": "",
+        "img": "",
+        "tab": "org"
+      },
+      {
+        "id": "ywun2bs",
+        "type": "button",
+        "x": 330,
+        "y": 1000,
+        "w": 260,
+        "h": 70,
+        "style": "glass",
+        "accent": "story",
+        "a": "Истории",
+        "b": "",
+        "c": "",
+        "img": "",
+        "tab": "story"
+      },
+      {
+        "id": "okrikfu",
+        "type": "stat",
+        "x": 490,
+        "y": 140,
+        "w": 160,
+        "h": 110,
+        "style": "plain",
+        "accent": "char",
+        "a": "77#7",
+        "b": "",
+        "c": "",
+        "img": "",
+        "tab": "graph"
+      }
+    ]
+  },
+  "events": [
+    {
+      "id": "i7kqmff",
+      "date": "2005.09.12",
+      "title": "Захват заложников в мотеле \"Ласт Найт\"",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "hvd1pp4",
+      "date": "2010.06.01",
+      "title": "«Французская революция»",
+      "text": "",
+      "accent": "org",
+      "refs": []
+    },
+    {
+      "id": "og3z8wo",
+      "date": "2011.08.10",
+      "title": "Ликвидация французской ОПГ",
+      "text": "",
+      "accent": "org",
+      "refs": []
+    },
+    {
+      "id": "q69lyzw",
+      "date": "2013.01.01",
+      "title": "«Дом семьи Перегрим»",
+      "text": "",
+      "accent": "story",
+      "refs": []
+    },
+    {
+      "id": "186iaax",
+      "date": "2017.04.28",
+      "title": "Захват банка «Detroit Line, LLC.»",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "n028o6r",
+      "date": "2018.10.10",
+      "title": "Появление Офиса специальных операций",
+      "text": "",
+      "accent": "org",
+      "refs": []
+    },
+    {
+      "id": "25yzxd6",
+      "date": "2013.01.25",
+      "title": "Встреча Елисея и Нико",
+      "text": "",
+      "accent": "org",
+      "refs": []
+    },
+    {
+      "id": "h3qodn2",
+      "date": "2017.11.20",
+      "title": "Закрытый приём Дома записей Виркоми",
+      "text": "",
+      "accent": "story",
+      "refs": []
+    },
+    {
+      "id": "h3mt84h",
+      "date": "2022.10.04",
+      "title": "Подавление спящей ячейки в портовом терминале Сан-Фиерро",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "mwy5wbq",
+      "date": "2024.06.10",
+      "title": "Внедрение Эскаля Делакруа в группировку торговцев оружием",
+      "text": "",
+      "accent": "org",
+      "refs": []
+    },
+    {
+      "id": "5c239tt",
+      "date": "2024.06.29",
+      "title": "Начало гражданской войны в Мексике",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "h29fh0p",
+      "date": "2005.07.10",
+      "title": "Убийство капитана станции Рока Эскаланте",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "td0nnkt",
+      "date": "2024.07.20",
+      "title": "[[Смерть агента Голда и его группы]]",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "6ut11yg",
+      "date": "2024.07.10",
+      "title": "Командировка представителей 27-го бранча ОСО в Мексику",
+      "text": "",
+      "accent": "char",
+      "refs": []
+    },
+    {
+      "id": "021nbgk",
+      "date": "2025.05.01",
+      "title": "«Дело Хоукфилд»",
+      "text": "",
+      "accent": "story",
+      "refs": []
+    }
+  ],
+  "ord": {
+    "story": [
+      "d_ikxlfds",
+      "v1",
+      "v2",
+      "v3",
+      "v5",
+      "v6",
+      "v7",
+      "bgu0sxc",
+      "d_n0xvq8f",
+      "nk922m4"
+    ],
+    "org": [
+      "d_jop7psc",
+      "office",
+      "k2ii7zw",
+      "87slebo",
+      "fsk",
+      "d_rmtlf55",
+      "4eyuxzg",
+      "vu6ykpb",
+      "nulfxqb",
+      "a18juac",
+      "31555x0",
+      "d_cmjn8g1",
+      "ip9mz30",
+      "dmdwnca",
+      "uyke2qy",
+      "7brwowu",
+      "d_of9y13q",
+      "kg",
+      "7atwltp",
+      "d_dkwoazb",
+      "fp78767",
+      "55c6pj9",
+      "9tyre6s",
+      "d_b1fvhpq",
+      "psu27wu",
+      "sybigd8",
+      "lq3o3rb"
+    ],
+    "char": [
+      "niko",
+      "ezik",
+      "lis",
+      "nath",
+      "escal",
+      "gold",
+      "sey",
+      "ousa50u",
+      "f469chb",
+      "w42r5da",
+      "zmdlyjs",
+      "ffz2lca",
+      "lswnng4",
+      "xc3bzky",
+      "4t0c2tu",
+      "a6ur7ha",
+      "lczdkb3",
+      "n6dx18q"
+    ]
+  },
+  "divs": {
+    "d_n0xvq8f": {
+      "type": "story",
+      "label": "SEASON 2 ",
+      "sub": "He Who Blinks The First, Second And Last"
+    },
+    "d_ikxlfds": {
+      "type": "story",
+      "label": "SEASON 1",
+      "sub": "Neither Here Nor There"
+    },
+    "d_jop7psc": {
+      "type": "org",
+      "label": "dictum est factum",
+      "sub": "Office of Special Operations"
+    },
+    "d_rmtlf55": {
+      "type": "org",
+      "label": "TO PROTECT AND SERVE",
+      "sub": "Police Structures"
+    },
+    "d_cmjn8g1": {
+      "type": "org",
+      "label": "THE CAVALRY IS HERE",
+      "sub": "Federal Services"
+    },
+    "d_of9y13q": {
+      "type": "org",
+      "label": "UNDER KONTROL",
+      "sub": "Gruppa and it's friends"
+    },
+    "d_dkwoazb": { "type": "org", "label": "COIN'S BLINK", "sub": "" },
+    "d_b1fvhpq": {
+      "type": "org",
+      "label": "PULL THE TRIGGER",
+      "sub": "Crime organizations"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <path
+    d="M2 12V2h10M28 2h10v10M38 28v10H28M12 38H2V28"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.6"
+  />
+  <circle
+    cx="20"
+    cy="20"
+    r="10"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.4"
+  />
+  <path
+    d="M20 5v10M20 25v10M5 20h10M25 20h10"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.4"
+  />
+  <circle cx="20" cy="20" r="2.4" fill="#ffffff" />
+</svg>

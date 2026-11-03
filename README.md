@@ -2,31 +2,70 @@
 
 # HORIZON · UNKNOWN
 
-*everyone has a past. some are worth killing for.*
+*neither here nor there*
 
-**Интерактивный справочник по вселенной Horizon Unknown:**
+**Canon Hub — интерактивный справочник по вселенной Horizon Unknown:**
 граф связей, досье персонажей, организации, истории и хронология.
 
 <br>
 
-[![Открыть сайт](https://img.shields.io/badge/ОТКРЫТЬ_САЙТ-HORIZON_UNKNOWN-c23a2e?style=for-the-badge&labelColor=16161a)](https://weisez.github.io/Horizon-Unknown/?view)
-
-<br>
-
-![Статика](https://img.shields.io/badge/stack-HTML_·_CSS_·_JS-d9830f?style=flat-square&labelColor=16161a)
-![Без зависимостей](https://img.shields.io/badge/dependencies-none-6f95b5?style=flat-square&labelColor=16161a)
-![Hosting](https://img.shields.io/badge/hosting-GitHub_Pages-ece8e1?style=flat-square&labelColor=16161a)
+[![Открыть сайт](https://img.shields.io/badge/ОТКРЫТЬ_САЙТ-weisez.github.io-c23a2e?style=for-the-badge&labelColor=16161a)](https://weisez.github.io/Horizon-Unknown/?view)
 
 </div>
-
-<!-- Скриншот: положите картинку в docs/preview.png и раскомментируйте строку ниже
-<p align="center"><img src="docs/preview.png" alt="Horizon Unknown — Canon Hub" width="860"></p>
--->
 
 ---
 
-<div align="center">
+## 🔗 Ссылка
 
-<sub>Horizon Unknown Canon Hub · <a href="https://weisez.github.io/Horizon-Unknown/?view">открыть сайт</a></sub>
+> **[weisez.github.io/Horizon-Unknown/?view](https://weisez.github.io/Horizon-Unknown/?view)**
 
-</div>
+Страница открывается в режиме чтения: можно изучать вселенную, но нельзя ничего изменить.
+
+## ✦ Что внутри
+
+| Раздел | Что это |
+|---|---|
+| **Главная** | Стартовая страница из блоков: заголовок, текст, картинка, цитата, цифра, кнопка. |
+| **Граф** | Все карточки на одной карте. Цветные связи, фильтры, миникарта, масштаб, автораскладка. |
+| **Персонажи / Организации / Истории** | Досье со связями, структурами организаций, порядком и разделителями (например, по сезонам). |
+| **Читалка историй** | Полноценный редактор с форматированием, картинками, выносками и таблицами. |
+| **Таймлайн** | Хронология событий и режим слайдшоу «Рассказать». |
+
+Карточку можно пометить как **corrupted**: она глючит, видны лишь обрывки фраз. Так в базу попадает то, что ещё планируется.
+
+## 🗂 Структура репозитория
+
+```
+Horizon-Unknown/
+├── index.html        # разметка и подключение файлов
+├── css/
+│   └── style.css     # все стили
+├── js/               # скрипты по функциям, подключаются по порядку
+│   ├── 01-core.js … 16-timeline-slideshow.js
+│   ├── 17-publish.js # публикация data.json на GitHub из редактора
+│   └── 99-init.js    # запуск страницы
+├── data.json         # все данные: карточки, связи, главная, таймлайн
+├── img/              # картинки (загружаются через «Медиа»)
+├── og.png            # превью для ссылок в мессенджерах
+└── favicon.svg
+```
+
+Сайт статический: сборки нет, пакетов устанавливать не нужно. Порядок подключения скриптов важен, потому что поздние файлы дополняют ранние.
+
+## ✏️ Как обновлять контент
+
+1. Откройте сайт в режиме редактирования и внесите правки (картинки загружайте через **«Медиа»**).
+2. Нажмите **«Опубликовать»**: покажется список изменений, после подтверждения `data.json` попадёт в репозиторий одним коммитом. Точка у кнопки означает неопубликованные правки.
+3. Через минуту GitHub Pages покажет обновлённую версию всем.
+
+Для «Медиа» и «Опубликовать» нужен токен GitHub (Fine-grained, один репозиторий, право **Contents: Read and write**). Он хранится только в вашем браузере. Подробнее: «Медиа» → ⚙.
+
+## 🚀 Запуск локально
+
+```bash
+git clone https://github.com/weisez/Horizon-Unknown.git
+cd Horizon-Unknown
+python3 -m http.server 8000
+```
+
+Откройте <http://localhost:8000/?view>. Локальный сервер нужен, чтобы страница могла загрузить `data.json`.

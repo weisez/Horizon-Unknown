@@ -1,0 +1,173 @@
+      /* ===== v10: timeline slideshow ===== */
+      #tl.show .ev {
+        transition:
+          opacity 0.6s,
+          filter 0.6s;
+      }
+      #tl.show .ev:not(.cur) {
+        opacity: 0.2;
+        filter: saturate(0.3);
+      }
+      #tl.show .ev .more2 {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        margin: 0 !important;
+      }
+      .ev.cur {
+        z-index: 12;
+      }
+      .ev.cur .card {
+        transform: scale(1.1);
+        box-shadow: 0 22px 60px rgba(0, 0, 0, 0.5);
+      }
+      .ev.cur .dot {
+        transform: scale(1.9);
+        background: var(--ac);
+      }
+      .ev.cur .dot:after {
+        content: "";
+        position: absolute;
+        inset: -8px;
+        border-radius: 50%;
+        border: 2px solid var(--ac);
+        animation: ssp 1.7s ease-out infinite;
+      }
+      @keyframes ssp {
+        from {
+          transform: scale(0.6);
+          opacity: 1;
+        }
+        to {
+          transform: scale(2.4);
+          opacity: 0;
+        }
+      }
+      .ss-on #bar,
+      .ss-on #tbar {
+        opacity: 0.08;
+        pointer-events: none;
+        transition: opacity 0.5s;
+      }
+      #ss {
+        position: fixed;
+        left: 50%;
+        bottom: 22px;
+        transform: translate(-50%, 40px);
+        width: min(780px, 94vw);
+        z-index: 45;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.5s,
+          transform 0.6s cubic-bezier(0.2, 0.8, 0.3, 1);
+      }
+      .ss-on #ss {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        pointer-events: auto;
+      }
+      .ss-in {
+        --ac: var(--c-char);
+        background: var(--glass);
+        backdrop-filter: blur(18px) saturate(1.3);
+        border: 1px solid var(--bd);
+        border-top: 3px solid var(--ac);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5);
+        padding: 0 22px 14px;
+      }
+      #ss.a-org .ss-in {
+        --ac: var(--c-org);
+      }
+      #ss.a-story .ss-in {
+        --ac: var(--c-story);
+      }
+      #ss.a-ink .ss-in {
+        --ac: var(--ink);
+      }
+      .ss-bar {
+        height: 2px;
+        margin: 0 -22px 12px;
+        background: rgba(127, 127, 127, 0.25);
+      }
+      .ss-bar i {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: var(--ac);
+      }
+      .ss-top {
+        display: flex;
+        justify-content: space-between;
+        font:
+          11px ui-monospace,
+          Menlo,
+          monospace;
+        letter-spacing: 0.14em;
+        color: var(--mute);
+      }
+      .ss-d {
+        color: var(--ac);
+        font-size: 13px;
+      }
+      .ss-t {
+        margin: 6px 0 4px;
+        font:
+          600 clamp(20px, 3vw, 28px)/1.2 "Playfair Display",
+          serif;
+      }
+      .ss-x {
+        font-size: 15px;
+        line-height: 1.65;
+        max-height: 20vh;
+        overflow: auto;
+        color: var(--ink);
+      }
+      .ss-ch {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 8px;
+      }
+      .ss-ch:empty {
+        display: none;
+      }
+      .ss-sw :is(.ss-top, .ss-t, .ss-x, .ss-ch) {
+        animation: ssw 0.65s cubic-bezier(0.2, 0.8, 0.3, 1) both;
+      }
+      .ss-sw .ss-t {
+        animation-delay: 0.05s;
+      }
+      .ss-sw .ss-x {
+        animation-delay: 0.12s;
+      }
+      .ss-sw .ss-ch {
+        animation-delay: 0.2s;
+      }
+      @keyframes ssw {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+      }
+      .ss-ctl {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .ss-ctl button {
+        min-width: 38px;
+        padding: 7px 12px;
+        font-size: 13px;
+      }
+      .ss-ctl .sp {
+        flex: 1;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .ev.cur .dot:after,
+        .ss-sw * {
+          animation: none !important;
+        }
+      }
+    
+

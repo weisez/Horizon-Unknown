@@ -1,0 +1,198 @@
+      /* ===== v7: corrupted ===== */
+      .corrupt {
+        position: relative;
+        animation: cxj 3.1s steps(1) infinite !important;
+        text-shadow:
+          1.5px 0 rgba(255, 0, 60, 0.55),
+          -1.5px 0 rgba(0, 200, 255, 0.45);
+      }
+      .node.corrupt {
+        animation-duration: 2.3s !important;
+      }
+      .corrupt :is(img, .ph) {
+        filter: grayscale(1) contrast(1.7) brightness(0.55) blur(1.2px);
+      }
+      .corrupt > *:not(.cx-b):not(.cx-sc) {
+        animation: cxt 4.7s steps(1) infinite;
+      }
+      @keyframes cxj {
+        0%,
+        90%,
+        100% {
+          translate: 0 0;
+          filter: none;
+          clip-path: none;
+          opacity: 1;
+        }
+        91% {
+          translate: -4px 1px;
+          filter: hue-rotate(60deg) contrast(1.5);
+          clip-path: inset(0 0 55% 0);
+        }
+        92% {
+          translate: 5px -1px;
+          filter: invert(0.15);
+          clip-path: inset(40% 0 0 0);
+        }
+        93% {
+          translate: -2px 0;
+          filter: none;
+          clip-path: inset(18% 0 62% 0);
+          opacity: 0.7;
+        }
+        94% {
+          translate: 0 0;
+          clip-path: none;
+          opacity: 1;
+        }
+        96% {
+          translate: 3px 0;
+          filter: saturate(3) hue-rotate(-40deg);
+        }
+        97% {
+          translate: 0 0;
+          filter: none;
+        }
+      }
+      @keyframes cxt {
+        0%,
+        84%,
+        100% {
+          opacity: 1;
+        }
+        85% {
+          opacity: 0.35;
+        }
+        87% {
+          opacity: 0.9;
+          translate: 2px 0;
+        }
+        89% {
+          opacity: 0.5;
+          translate: -3px 0;
+        }
+        91% {
+          opacity: 1;
+          translate: 0 0;
+        }
+      }
+      .cx-sc {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2;
+        background: repeating-linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.22) 0 2px,
+          transparent 2px 4px
+        );
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+      }
+      .cx-sc:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 22%;
+        top: -25%;
+        background: linear-gradient(
+          180deg,
+          transparent,
+          rgba(255, 255, 255, 0.12),
+          transparent
+        );
+        animation: cxs 3.4s linear infinite;
+      }
+      @keyframes cxs {
+        to {
+          top: 110%;
+        }
+      }
+      .cx-b {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        z-index: 3;
+        padding: 2px 7px;
+        font:
+          600 9px ui-monospace,
+          Menlo,
+          monospace;
+        letter-spacing: 0.2em;
+        color: #fff;
+        background: var(--c-char);
+        text-shadow: none;
+        pointer-events: none;
+        animation: cxb 1.6s steps(1) infinite;
+      }
+      @keyframes cxb {
+        0%,
+        60%,
+        100% {
+          opacity: 1;
+        }
+        65% {
+          opacity: 0.2;
+        }
+        70% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0.5;
+        }
+      }
+      .node.corrupt .cx-b {
+        top: -9px;
+        right: -4px;
+        font-size: 8px;
+        padding: 1px 5px;
+      }
+      .rl-row.corrupt,
+      .corrupt .rl-row {
+        pointer-events: auto;
+      }
+      #rd.corrupt .rd-sc {
+        animation: cxj 3.1s steps(1) infinite;
+        text-shadow:
+          1.5px 0 rgba(255, 0, 60, 0.5),
+          -1.5px 0 rgba(0, 200, 255, 0.4);
+      }
+      #rd.corrupt .rd-body {
+        user-select: none;
+      }
+      .cx-tg {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 10px 12px;
+        margin: 10px 0;
+        border: 1px dashed var(--c-char);
+        background: rgba(194, 58, 46, 0.08);
+        cursor: pointer;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 13px;
+      }
+      .cx-tg input {
+        width: auto;
+        margin: 3px 0 0;
+        flex: none;
+        appearance: auto;
+      }
+      .cx-tg small {
+        display: block;
+        color: var(--mute);
+        font-size: 11px;
+        margin-top: 2px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .corrupt,
+        .corrupt > *,
+        .cx-sc:after,
+        .cx-b,
+        #rd.corrupt .rd-sc {
+          animation: none !important;
+        }
+      }
+

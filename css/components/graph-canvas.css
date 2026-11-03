@@ -1,0 +1,153 @@
+      #stage {
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(var(--dot) 1.5px, transparent 1.5px);
+        background-size: 32px 32px;
+        cursor: grab;
+        touch-action: none;
+      }
+      #stage:active {
+        cursor: grabbing;
+      }
+      #world {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform-origin: 0 0;
+      }
+      #lk {
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: visible;
+        pointer-events: none;
+      }
+      .lnk path {
+        fill: none;
+        stroke: var(--line);
+        stroke-width: 1.5;
+        transition:
+          stroke 0.3s,
+          opacity 0.3s;
+      }
+      .lnk text {
+        fill: var(--mute);
+        font:
+          italic 13px "Playfair Display",
+          serif;
+        text-anchor: middle;
+        paint-order: stroke;
+        stroke: var(--bg);
+        stroke-width: 5px;
+        stroke-linejoin: round;
+      }
+      .lnk.on path {
+        stroke: var(--ink);
+        stroke-width: 2;
+        stroke-dasharray: 6 5;
+        animation: flow 1s linear infinite;
+      }
+      @keyframes flow {
+        to {
+          stroke-dashoffset: -11;
+        }
+      }
+      .focus .lnk:not(.on) {
+        opacity: 0.12;
+      }
+      .focus .node:not(.on) {
+        opacity: 0.25;
+      }
+      .node {
+        --ac: var(--c-char);
+        position: absolute;
+        width: 176px;
+        transform: translate(-50%, -50%);
+        background: var(--card);
+        border: 1px solid var(--bd);
+        border-top: 3px solid var(--ac);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+        cursor: pointer;
+        user-select: none;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s,
+          opacity 0.3s;
+        animation: pop 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.2) backwards;
+      }
+      .node.org {
+        --ac: var(--c-org);
+      }
+      .node.story {
+        --ac: var(--c-story);
+        width: 150px;
+      }
+      .node:hover {
+        transform: translate(-50%, -50%) scale(1.06);
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+        z-index: 5;
+      }
+      @keyframes pop {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0.55);
+        }
+      }
+      .ph {
+        aspect-ratio: 1;
+        background: linear-gradient(145deg, var(--ac), var(--bg));
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        color: #fff;
+        font:
+          600 44px "Playfair Display",
+          serif;
+      }
+      .org .ph {
+        aspect-ratio: 16/10;
+      }
+      .story .ph {
+        aspect-ratio: 2/3;
+      }
+      .ph img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: saturate(0.85);
+        transition:
+          filter 0.3s,
+          transform 0.6s;
+      }
+      .node:hover .ph img {
+        filter: none;
+        transform: scale(1.07);
+      }
+      .tx {
+        padding: 9px 11px 11px;
+      }
+      .tx b {
+        display: block;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+      .tx i {
+        display: block;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 10px;
+        color: var(--ac);
+        margin: 2px 0 4px;
+      }
+      .tx p {
+        margin: 0;
+        font-size: 12px;
+        color: var(--mute);
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }

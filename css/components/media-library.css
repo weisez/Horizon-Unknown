@@ -1,0 +1,168 @@
+      /* ===== v8: media library ===== */
+      html.view :is(#b-media, .ml-pick, .ml-st) {
+        display: none !important;
+      }
+      #ml {
+        position: fixed;
+        inset: 0;
+        z-index: 85;
+        display: none;
+        place-items: center;
+        background: rgba(0, 0, 0, 0.62);
+        backdrop-filter: blur(6px);
+      }
+      #ml.open {
+        display: grid;
+        animation: rdin 0.3s both;
+      }
+      .ml-box {
+        width: min(940px, 96vw);
+        height: min(720px, 90vh);
+        display: flex;
+        flex-direction: column;
+        background: var(--card);
+        border: 1px solid var(--bd);
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+      }
+      .ml-h {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--bd);
+      }
+      .ml-h strong {
+        font:
+          600 18px "Playfair Display",
+          serif;
+      }
+      .ml-h small {
+        color: var(--mute);
+      }
+      .ml-h .sp,
+      .ml-f .sp {
+        flex: 1;
+      }
+      .ml-up {
+        cursor: pointer;
+        display: inline-block;
+        padding: 7px 14px;
+        border: 1px solid var(--c-char);
+        color: var(--c-char);
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .ml-up:hover {
+        background: var(--c-char);
+        color: #fff;
+      }
+      .ml-up input {
+        display: none;
+      }
+      .ml-b {
+        flex: 1;
+        overflow: auto;
+        padding: 14px;
+        position: relative;
+      }
+      .ml-b.drag {
+        outline: 2px dashed var(--c-char);
+        outline-offset: -8px;
+        background: rgba(194, 58, 46, 0.07);
+      }
+      .ml-g {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+      }
+      .ml-i {
+        padding: 0;
+        border: 1px solid var(--bd);
+        display: grid;
+        grid-template-rows: 110px auto;
+        text-align: left;
+        overflow: hidden;
+        background: rgba(127, 127, 127, 0.06);
+        text-transform: none;
+        letter-spacing: 0;
+        animation: rise 0.4s both;
+        transition:
+          transform 0.25s,
+          box-shadow 0.25s;
+      }
+      .ml-i:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+        background: var(--card);
+        color: var(--ink);
+      }
+      .ml-i img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+      }
+      .ml-i span {
+        padding: 5px 8px;
+        font-size: 11px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: var(--mute);
+      }
+      .ml-m {
+        color: var(--mute);
+        text-align: center;
+        padding: 40px 10px;
+        line-height: 1.7;
+      }
+      .ml-m b {
+        color: var(--ink);
+      }
+      .ml-cfg {
+        max-width: 520px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+      }
+      .ml-cfg label {
+        display: grid;
+        gap: 4px;
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--mute);
+      }
+      .ml-cfg ol {
+        color: var(--mute);
+        font-size: 13px;
+        line-height: 1.7;
+        padding-left: 18px;
+        margin: 0;
+      }
+      .ml-f {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 14px;
+        border-top: 1px solid var(--bd);
+        font-size: 12px;
+        color: var(--mute);
+      }
+      .ml-f button {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+      .ml-st {
+        display: block;
+        color: var(--mute);
+        font-size: 11px;
+        margin: 4px 0;
+      }
+      .ml-pick {
+        margin: 6px 0;
+      }
+

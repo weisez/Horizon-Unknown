@@ -1,0 +1,90 @@
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --topo: rgba(190, 205, 190, 0.07);
+          --topo2: rgba(190, 205, 190, 0.16);
+          --sweep: rgba(194, 58, 46, 0.26);
+        }
+      }
+      :root[data-theme="dark"] {
+        --topo: rgba(190, 205, 190, 0.07);
+        --topo2: rgba(190, 205, 190, 0.16);
+        --sweep: rgba(194, 58, 46, 0.26);
+      }
+      #bg {
+        background:
+          radial-gradient(60% 50% at 10% 95%, var(--g-red), transparent 70%),
+          radial-gradient(55% 60% at 100% 0%, var(--g-navy), transparent 70%),
+          radial-gradient(130% 100% at 50% 50%, transparent 45%, var(--vg));
+      }
+      #bg:before {
+        top: 0;
+        bottom: 0;
+        height: auto;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent 0 2px,
+          rgba(0, 0, 0, 0.07) 2px 3px
+        );
+        box-shadow: none;
+        animation: none;
+      }
+      .topo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .topo path {
+        fill: none;
+        stroke: var(--topo);
+        stroke-width: 1;
+      }
+      .topo path.m {
+        stroke: var(--topo2);
+        stroke-width: 1.8;
+      }
+      .radar {
+        position: absolute;
+        right: -4%;
+        bottom: -14%;
+        width: 62vmin;
+        height: 62vmin;
+        border-radius: 50%;
+        background:
+          conic-gradient(transparent 0 78%, var(--sweep)),
+          repeating-radial-gradient(
+            circle,
+            transparent 0 11%,
+            var(--topo2) 11% 11.5%
+          );
+        animation: spin 14s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .hud {
+        position: absolute;
+        font:
+          10px ui-monospace,
+          Menlo,
+          monospace;
+        letter-spacing: 0.3em;
+        color: var(--topo2);
+        text-transform: uppercase;
+        white-space: pre;
+        line-height: 1.8;
+      }
+      .sun {
+        fill: var(--c-char);
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: ping 2.4s ease-in-out infinite;
+      }
+      @keyframes ping {
+        50% {
+          transform: scale(1.9);
+          opacity: 0.45;
+        }
+      }

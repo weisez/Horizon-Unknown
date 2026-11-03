@@ -1,0 +1,56 @@
+      :root {
+        --bg: #e9e6e0;
+        --card: #faf8f4;
+        --ink: #17181c;
+        --mute: #6b675f;
+        --line: #9a948a;
+        --bd: #d6d1c7;
+        --dot: #cfc9bd;
+        --c-char: #6b0000;
+        --c-org: #1a2a3a;
+        --c-story: #d9830f;
+        --glass: rgba(250, 248, 244, 0.82);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0b0b0d;
+          --card: #16161a;
+          --ink: #ece8e1;
+          --mute: #8f8a82;
+          --line: #5b5750;
+          --bd: #2b2a2e;
+          --dot: #1e1e22;
+          --c-char: #c23a2e;
+          --c-org: #6f95b5;
+          --c-story: #f0a02a;
+          --glass: rgba(22, 22, 26, 0.84);
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0b0b0d;
+        --card: #16161a;
+        --ink: #ece8e1;
+        --mute: #8f8a82;
+        --line: #5b5750;
+        --bd: #2b2a2e;
+        --dot: #1e1e22;
+        --c-char: #c23a2e;
+        --c-org: #6f95b5;
+        --c-story: #f0a02a;
+        --glass: rgba(22, 22, 26, 0.84);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--ink);
+        font:
+          400 14px/1.45 Jost,
+          system-ui,
+          sans-serif;
+      }

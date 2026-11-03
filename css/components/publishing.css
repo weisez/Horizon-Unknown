@@ -1,0 +1,11 @@
+/* ===== publish ===== */
+html.view #b-pub { display: none !important; }
+#b-pub.dirty:after { content: ""; display: inline-block; width: 7px; height: 7px; margin-left: 7px; border-radius: 50%; background: var(--c-story); vertical-align: middle; animation: cxb 1.6s steps(1) infinite; }
+#pb { position: fixed; inset: 0; z-index: 85; display: none; place-items: center; background: rgba(0, 0, 0, 0.62); backdrop-filter: blur(6px); }
+#pb.open { display: grid; animation: rdin 0.3s both; }
+#pb .ml-box { width: min(640px, 96vw); height: auto; max-height: 90vh; }
+.pb-sum { display: grid; gap: 8px; max-width: 560px; margin: 0 auto; }
+.pb-r { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; padding: 8px 10px; border: 1px solid var(--bd); border-left: 3px solid var(--c); background: rgba(127, 127, 127, 0.06); }
+.pb-r b { font-weight: 600; } .pb-r small { color: var(--mute); }
+.pb-warn { padding: 8px 10px; border: 1px solid var(--c-char); background: rgba(194, 58, 46, 0.09); font-size: 13px; line-height: 1.5; }
+.pb-sum label { display: grid; gap: 4px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mute); }

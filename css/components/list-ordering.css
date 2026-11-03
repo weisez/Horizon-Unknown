@@ -1,0 +1,283 @@
+      /* ===== v9: ordering & dividers ===== */
+      .item {
+        position: relative;
+      }
+      html.view :is(.dh, .dv-add, .dv-x, .lh .dv-new) {
+        display: none !important;
+      }
+      .dh {
+        width: 26px;
+        height: 26px;
+        padding: 0;
+        display: grid;
+        place-items: center;
+        border: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 13px;
+        letter-spacing: -2px;
+        cursor: grab;
+        opacity: 0;
+        transition:
+          opacity 0.2s,
+          background 0.2s;
+        touch-action: none;
+        user-select: none;
+        z-index: 6;
+      }
+      .item > .dh {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+      }
+      .item:hover > .dh,
+      .dv:hover > .dh,
+      .dh:focus-visible {
+        opacity: 1;
+      }
+      .dh:hover {
+        background: var(--c-char);
+        color: #fff;
+      }
+      .dh:active {
+        cursor: grabbing;
+      }
+      @media (hover: none) {
+        .dh {
+          opacity: 0.85;
+        }
+        .dv-add {
+          opacity: 0.45 !important;
+        }
+      }
+      .lh .dv-new {
+        margin-left: auto;
+        font-size: 11px;
+        padding: 5px 10px;
+      }
+      .dv-add {
+        display: block;
+        position: relative;
+        width: 100%;
+        max-width: 980px;
+        height: 14px;
+        margin: -14px auto 0;
+        padding: 0;
+        border: 0;
+        background: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+        cursor: pointer;
+      }
+      .dv-add:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        border-top: 1px dashed var(--c-story);
+      }
+      .dv-add span {
+        position: relative;
+        background: var(--bg);
+        padding: 0 12px;
+        font-size: 10px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--c-story);
+      }
+      .dv-add:hover,
+      .dv-add:focus-visible {
+        opacity: 1;
+        background: none;
+        color: var(--c-story);
+      }
+      .lst-drag .dv-add {
+        opacity: 0 !important;
+        pointer-events: none;
+      }
+      .dv {
+        --ac: var(--c-story);
+        max-width: 980px;
+        margin: 34px auto 18px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        position: relative;
+        animation: rise 0.55s both;
+        transition: opacity 0.25s;
+      }
+      .dv > .dh {
+        position: absolute;
+        left: -34px;
+        top: 50%;
+        margin-top: -13px;
+      }
+      .dv-l {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--ac));
+      }
+      .dv-l.b {
+        background: linear-gradient(270deg, transparent, var(--ac));
+      }
+      .dv-c {
+        display: grid;
+        gap: 3px;
+        justify-items: center;
+        min-width: 0;
+        max-width: 60%;
+      }
+      .dv-r {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .dv-o {
+        color: var(--ac);
+        font-style: normal;
+        font-size: 12px;
+        animation: cxb 4s steps(1) infinite;
+      }
+      .dv-t {
+        font:
+          300 clamp(16px, 2.6vw, 24px) Jost,
+          sans-serif;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--ink);
+      }
+      .dv-s {
+        font:
+          italic 14px "Playfair Display",
+          serif;
+        color: var(--mute);
+        text-align: center;
+      }
+      .dv-n {
+        font:
+          11px ui-monospace,
+          Menlo,
+          monospace;
+        color: var(--ac);
+      }
+      input.dv-t,
+      input.dv-s {
+        width: min(420px, 60vw);
+        background: transparent;
+        border: 0;
+        border-bottom: 1px dashed transparent;
+        padding: 2px 4px;
+      }
+      input.dv-t:hover,
+      input.dv-s:hover,
+      input.dv-t:focus,
+      input.dv-s:focus {
+        border-bottom-color: var(--ac);
+        outline: 0;
+      }
+      .dv-f {
+        width: 26px;
+        height: 26px;
+        padding: 0;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 0;
+        flex: none;
+        border-color: var(--ac);
+      }
+      .dv-f:after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: solid currentColor;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg) translate(-1px, -1px);
+        transition: transform 0.3s;
+      }
+      .dv.fold .dv-f:after {
+        transform: rotate(-45deg);
+      }
+      .dv-f:hover {
+        background: var(--ac);
+        color: #fff;
+      }
+      .dv-x {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 1;
+        flex: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      .dv:hover .dv-x,
+      .dv-x.arm {
+        opacity: 1;
+      }
+      .dv-x.arm {
+        width: auto;
+        padding: 0 10px;
+        border-radius: 12px;
+        font-size: 11px;
+      }
+      .fh {
+        display: none !important;
+      }
+      .lst-drag :is(.item, .dv) {
+        transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.3, 1) !important;
+      }
+      .lst-drag {
+        user-select: none;
+        cursor: grabbing;
+      }
+      .lst-nt :is(.item, .dv) {
+        transition: none !important;
+      }
+      .lst-slot {
+        opacity: 0.28;
+        outline: 1px dashed var(--mute);
+        outline-offset: -1px;
+      }
+      .lst-ghost {
+        position: fixed;
+        z-index: 70;
+        pointer-events: none;
+        padding: 12px 18px;
+        background: var(--card);
+        border: 1px solid var(--bd);
+        border-left: 4px solid var(--c-story);
+        box-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
+        transform: rotate(-1deg) scale(1.02);
+        display: grid;
+        gap: 2px;
+        transition: opacity 0.15s;
+      }
+      .lst-ghost small {
+        font-size: 10px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--mute);
+      }
+      .lst-ghost b {
+        font:
+          600 17px "Playfair Display",
+          serif;
+      }
+      .ev.a-char {
+        --ac: var(--c-char);
+      }
+      .ev.a-org {
+        --ac: var(--c-org);
+      }
+      .ev.a-story {
+        --ac: var(--c-story);
+      }
+      .ev.a-ink {
+        --ac: var(--ink);
+      }
+

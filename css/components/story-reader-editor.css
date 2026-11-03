@@ -1,0 +1,471 @@
+      /* ===== v6: story reader / editor ===== */
+      html.view [data-write],
+      html.view .rd-ed {
+        display: none !important;
+      }
+      #rd {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: none;
+        flex-direction: column;
+        background: var(--bg);
+      }
+      #rd.open {
+        display: flex;
+        animation: rdin 0.45s cubic-bezier(0.2, 0.8, 0.3, 1);
+      }
+      @keyframes rdin {
+        from {
+          opacity: 0;
+          transform: translateY(24px) scale(0.985);
+        }
+      }
+      .rd-top {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: calc(env(safe-area-inset-top, 0px) + 8px) 12px 8px;
+        background: var(--glass);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--bd);
+      }
+      .rd-t {
+        font:
+          italic 400 17px "Playfair Display",
+          serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .rd-sp {
+        flex: 1;
+      }
+      .rd-top button {
+        padding: 6px 11px;
+        font-size: 12px;
+      }
+      .rd-pg {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 2px;
+        width: 0;
+        background: linear-gradient(90deg, var(--c-char), var(--c-story));
+      }
+      .rd-tb {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+        overflow-x: auto;
+        padding: 5px 12px;
+        background: var(--glass);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--bd);
+      }
+      .rd-tb button,
+      .clr {
+        min-width: 34px;
+        height: 34px;
+        padding: 0 8px;
+        border: 0;
+        font-size: 14px;
+        flex: none;
+        display: grid;
+        place-items: center;
+      }
+      .rd-tb button.on {
+        background: var(--ink);
+        color: var(--bg);
+      }
+      .rd-tb select {
+        width: auto;
+        height: 34px;
+        flex: none;
+      }
+      .rd-tb .sep {
+        width: 1px;
+        height: 20px;
+        background: var(--bd);
+        margin: 0 6px;
+        flex: none;
+      }
+      .rd-tb svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+      }
+      .clr {
+        position: relative;
+        cursor: pointer;
+      }
+      .clr input {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        padding: 0;
+      }
+      .clr:hover {
+        background: rgba(127, 127, 127, 0.18);
+      }
+      #rd:not(.edit) :is(.rd-tb, .rd-st) {
+        display: none;
+      }
+      .rd-sc {
+        flex: 1;
+        overflow: auto;
+        scroll-behavior: smooth;
+      }
+      .rd-st {
+        padding: 6px 14px;
+        font:
+          11px ui-monospace,
+          Menlo,
+          monospace;
+        color: var(--mute);
+        border-top: 1px solid var(--bd);
+        background: var(--glass);
+      }
+      .rd-hero {
+        position: relative;
+        min-height: 300px;
+        display: flex;
+        align-items: flex-end;
+        color: #fff;
+        overflow: hidden;
+        background: linear-gradient(120deg, var(--c-story), #0b0b0d 85%);
+      }
+      .rd-hero img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .rd-hs {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          0deg,
+          rgba(8, 8, 12, 0.9),
+          rgba(8, 8, 12, 0.15)
+        );
+      }
+      .rd-hi {
+        position: relative;
+        width: 100%;
+        padding: 60px max(22px, calc((100% - 720px) / 2)) 34px;
+      }
+      .rd-hi small {
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-size: 11px;
+        color: #f5a623;
+      }
+      .rd-hi h1 {
+        margin: 6px 0 8px;
+        font:
+          300 clamp(30px, 5vw, 56px)/1.05 Jost,
+          sans-serif;
+        letter-spacing: 0.04em;
+        animation: rise 0.7s both;
+      }
+      .rd-hi em {
+        display: block;
+        max-width: 560px;
+        color: #e6e1d8;
+        font:
+          italic 16px "Playfair Display",
+          serif;
+      }
+      .rd-meta {
+        margin: 0 0 8px;
+        font:
+          12px ui-monospace,
+          Menlo,
+          monospace;
+        color: #cfc9bd;
+      }
+      .rd-bw {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 40px 22px 0;
+      }
+      .rd-body {
+        position: relative;
+        outline: 0;
+        min-height: 50vh;
+        padding-bottom: 140px;
+        display: flow-root;
+        font:
+          400 calc(18px * var(--rfs, 1))/1.75 Lora,
+          Georgia,
+          serif;
+        overflow-wrap: anywhere;
+      }
+      #rd.sans .rd-body {
+        font-family: Jost, system-ui, sans-serif;
+      }
+      .rd-body.empty:before {
+        content: attr(data-ph);
+        position: absolute;
+        color: var(--mute);
+        pointer-events: none;
+      }
+      .rd-none {
+        color: var(--mute);
+        font-style: italic;
+      }
+      .rd-body p {
+        margin: 0 0 1.1em;
+      }
+      .rd-body :is(h1, h2, h3, h4) {
+        font:
+          600 1.5em/1.2 "Playfair Display",
+          serif;
+        margin: 1.6em 0 0.5em;
+      }
+      .rd-body h1 {
+        font-size: 2em;
+      }
+      .rd-body h3 {
+        font-size: 1.25em;
+      }
+      #rd:not(.edit) .rd-body > p:first-of-type:not(.rd-none)::first-letter {
+        float: left;
+        font:
+          600 3.4em/0.85 "Playfair Display",
+          serif;
+        padding: 0.08em 0.12em 0 0;
+        color: var(--c-char);
+      }
+      .rd-body blockquote {
+        margin: 1.4em 0;
+        padding: 0.2em 0 0.2em 1.2em;
+        border-left: 3px solid var(--c-story);
+        font:
+          italic 400 1.2em/1.5 "Playfair Display",
+          serif;
+      }
+      .rd-body a {
+        color: var(--c-char);
+        text-underline-offset: 3px;
+      }
+      .rd-body a.mn {
+        text-decoration: none;
+        border-bottom: 1px dashed var(--c-char);
+        background: rgba(127, 127, 127, 0.12);
+        padding: 0 0.2em;
+      }
+      .rd-body :is(ul, ol) {
+        margin: 0 0 1.1em;
+        padding-left: 1.4em;
+      }
+      .rd-body li {
+        margin: 0.2em 0;
+      }
+      .rd-body hr {
+        border: 0;
+        height: auto;
+        text-align: center;
+        margin: 2.2em 0;
+        overflow: visible;
+      }
+      .rd-body hr:after {
+        content: "✦  ✦  ✦";
+        letter-spacing: 0.5em;
+        color: var(--mute);
+        font-size: 0.8em;
+      }
+      .rd-body figure {
+        margin: 1.6em auto;
+        width: 75%;
+        text-align: center;
+        border-radius: 2px;
+      }
+      .rd-body figure[data-size="s"] {
+        width: 30%;
+      }
+      .rd-body figure[data-size="m"] {
+        width: 50%;
+      }
+      .rd-body figure[data-size="f"] {
+        width: 100%;
+      }
+      .rd-body figure img {
+        width: 100%;
+        display: block;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      }
+      .rd-body figcaption {
+        font:
+          italic 13px Jost,
+          sans-serif;
+        color: var(--mute);
+        margin-top: 0.6em;
+        outline: 0;
+      }
+      .rd-body figure[data-al="l"] {
+        float: left;
+        margin: 0.3em 1.5em 1em 0;
+      }
+      .rd-body figure[data-al="r"] {
+        float: right;
+        margin: 0.3em 0 1em 1.5em;
+      }
+      .rd-body .sel {
+        outline: 2px solid var(--c-char);
+        outline-offset: 3px;
+      }
+      @media (max-width: 600px) {
+        .rd-body figure[data-al] {
+          float: none;
+          margin: 1.2em auto;
+        }
+        .rd-body figure[data-size="s"],
+        .rd-body figure[data-size="m"] {
+          width: 70%;
+        }
+      }
+      .rd-body aside.co {
+        margin: 1.4em 0;
+        padding: 0.9em 1.2em;
+        border: 1px solid var(--bd);
+        border-left: 4px solid var(--c-org);
+        background: rgba(127, 127, 127, 0.08);
+        font-family: Jost, sans-serif;
+        font-size: 0.92em;
+      }
+      .rd-body aside.co p:last-child {
+        margin: 0;
+      }
+      .rd-body aside.co[data-t="w"] {
+        border-left-color: var(--c-story);
+      }
+      .rd-body aside.co[data-t="d"] {
+        border-left-color: var(--c-char);
+      }
+      .rd-body table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.4em 0;
+        font:
+          15px Jost,
+          sans-serif;
+      }
+      .rd-body :is(td, th) {
+        border: 1px solid var(--bd);
+        padding: 8px 10px;
+        min-width: 60px;
+        vertical-align: top;
+      }
+      .rd-body th {
+        background: rgba(127, 127, 127, 0.12);
+        text-align: left;
+      }
+      .rd-body .sp {
+        background: var(--ink);
+        color: transparent;
+        border-radius: 2px;
+        cursor: pointer;
+        transition:
+          background 0.45s,
+          color 0.45s 0.08s;
+      }
+      .rd-body .sp.show {
+        background: var(--bd);
+        color: var(--ink);
+      }
+      #rd.edit .rd-body .sp {
+        background: rgba(127, 127, 127, 0.25);
+        color: inherit;
+        outline: 1px dashed var(--mute);
+        cursor: text;
+      }
+      #rdpop {
+        position: fixed;
+        z-index: 80;
+        width: 290px;
+        display: none;
+        gap: 8px;
+        padding: 12px;
+        background: var(--card);
+        border: 1px solid var(--bd);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+      }
+      #rdpop.open {
+        display: grid;
+      }
+      #rdpop small,
+      .rd-or {
+        color: var(--mute);
+        font-size: 11px;
+      }
+      #rdpop .pf {
+        display: grid;
+        gap: 4px;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--mute);
+      }
+      #pml {
+        display: grid;
+        max-height: 200px;
+        overflow: auto;
+      }
+      #pml button {
+        border: 0;
+        border-bottom: 1px solid var(--bd);
+        text-align: left;
+      }
+      #figtb {
+        position: fixed;
+        z-index: 75;
+        display: none;
+        gap: 2px;
+        background: var(--ink);
+        padding: 3px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      }
+      #figtb.open {
+        display: flex;
+      }
+      #figtb button {
+        color: var(--bg);
+        border: 0;
+        padding: 5px 9px;
+        font-size: 12px;
+      }
+      #figtb button:hover {
+        background: var(--bg);
+        color: var(--ink);
+      }
+      #toast {
+        position: fixed;
+        left: 50%;
+        bottom: 30px;
+        transform: translate(-50%, 20px);
+        z-index: 90;
+        background: var(--ink);
+        color: var(--bg);
+        padding: 10px 16px;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.3s,
+          transform 0.3s;
+        max-width: 90%;
+      }
+      #toast.on {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+

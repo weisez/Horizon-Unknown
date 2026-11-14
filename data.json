@@ -491,14 +491,14 @@
       "id": "lczdkb3",
       "type": "char",
       "name": "Nikolay «Metel» Voshodsky",
-      "sub": "TCO «SEVERNY» // «TAGANSKAYA BRATVA»",
-      "short": "",
-      "long": "",
-      "quote": "",
+      "sub": "TCO «SEVERNY»",
+      "short": "Один из действующих лейтенантов «Северного». Один из тех, с чьим словом приходится считаться.",
+      "long": "История человека, который оставил прошлое за Полярным кругом, но так и не смог оставить криминальную жизнь. От мурманских улиц до американского подполья — путь Николая Восходского оказался длиннее, чем он мог представить.",
+      "quote": "«Север не отпускает. Метели всё сильнее.»",
       "img": "",
       "x": -2039.2062248795005,
       "y": -276.8411739585895,
-      "corrupt": 1
+      "banner": "img/odinokiy-putnik-v-snezhnoy-bure-ctm3.webp"
     },
     {
       "id": "n6dx18q",
@@ -792,7 +792,7 @@
       "type": "story",
       "name": "Interlude · Under Kontrol",
       "sub": "//error... //DE-CLASSIFIED",
-      "short": "Please, welcome. Agent Gold.",
+      "short": "Агент Голд к вашим услугам.",
       "long": "Командир наёмничьей группы с лёгкой улыбкой и тяжёлым долгом. Он зажигает чужие войны, не выходя из тени.",
       "quote": "Люди верят в то, что боятся.",
       "img": "",
@@ -804,15 +804,15 @@
     {
       "id": "nk922m4",
       "type": "story",
-      "name": "Vol. 1 · DATA EXPUNGED",
+      "name": "Vol. 1 · Snowy Snowstorm",
       "sub": "Season 2 · He Who Blinks The First, Second And Last",
-      "short": "",
+      "short": "История выходца из Мурманска, чьё бегство из родного города на борту атомного ледокола «Ямал» стало началом новой жизни в Америке, и новой страницей в истории «Северного».",
       "long": "",
-      "quote": "",
+      "quote": "«У каждого свой способ пережить зиму»",
       "img": "",
       "x": -436.6665673574306,
       "y": -653.2626383984676,
-      "corrupt": 1
+      "banner": "img/arkticheskaya-gavan-i-ledokol-nochyu-pais.webp"
     },
     {
       "id": "fgv2hph",
@@ -883,6 +883,19 @@
           "nid": ""
         }
       ]
+    },
+    {
+      "id": "zylssr6",
+      "type": "story",
+      "name": "Vol. 2 · Say Hello.",
+      "sub": "Season 2 · He Who Blinks The First, Second And Last",
+      "short": "",
+      "long": "",
+      "quote": "",
+      "img": "",
+      "x": -583.7634942526182,
+      "y": -275.0859530047757,
+      "corrupt": 1
     }
   ],
   "links": [
